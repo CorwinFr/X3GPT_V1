@@ -1,0 +1,5 @@
+X3_L4G_ADONIX.pdf : ADONIX L4G Documentation,availlable in the X3 V6 online help
+
+4GL_Language_training.pdf : A French Sage course on 4GL language availlable on the net
+
+getting-started_home.pdf : X3 V12 online help, section "getting started" fro developpers
