@@ -75,23 +75,10 @@ def process_html_file(file_path, output_file, base_directory, level=0, max_level
 
 # Exemple d'utilisation
 html_files = [
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_2.html',
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_3.html',    
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_4.html',   
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_5.html',   
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_6.html',   
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_7.html',   
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_8.html',           
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_9.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_10.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_11.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_12.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_13.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_14.html',     
-    'C:/WORK/SAGE X3 V12/DATA/SAGE X3 V12_DATA/online-help.sageerpx3.com/erp/12/wp-static-content/static-pages/en_US/MCD/ATB_1.html',                                             
+    'C:/WORK/SAGE X3 V12/DATA/...html',                                             
 ]
 output_directory = 'C:/WORK/SAGE X3 V12/IA/ATB/'
-start_texts_to_remove = {" Mirrored from online-help.sageerpx3", "	window.focus();", "	window[window.","} Index  Home X3"}
+start_texts_to_remove = {"	window.focus();"}
 for html_file in html_files:
     output_file = os.path.join(output_directory, os.path.basename(html_file).replace('.html', '.txt'))
     base_directory = os.path.dirname(html_file)
